@@ -1,5 +1,4 @@
 #!/bin/zsh
-
 #                 ██
 #                ░██
 #  ██████  ██████░██      ██████  █████
@@ -33,7 +32,8 @@ HISTFILE=~/.zsh_history
 # -------------------------------------------------------
 # Source username
 # -------------------------------------------------------
-source "$HOME/Dotfiles/zsh/p10k-user/username.zsh"
+figlet -f dosrebel "$(echo $USER | tr '[:lower:]' '[:upper:]' | head -c 1)${USER:1}" | lolcat
+# source "$HOME/Dotfiles/zsh/p10k-user/username.zsh"
 
 # -------------------------------------------------------
 # Function to clone zplug if not present and clone it
